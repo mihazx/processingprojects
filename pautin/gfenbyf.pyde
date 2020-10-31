@@ -1,0 +1,57 @@
+poworot = 0
+x = 0
+def setup():
+    size (600,400)
+    
+def draw():
+    #background(100)
+    global poworot 
+    global x
+    push()
+    translate(600,200)
+    rotate(radians(poworot)) 
+    ellipse (x,0,20,20)
+    poworot = poworot + 100
+    x = x + 0.1
+    pop()
+
+    push()
+    translate(0,200)
+    rotate(radians(poworot)) 
+    ellipse (x,0,20,20)
+    pop()
+    push()
+    translate(300,0)
+    rotate(radians(poworot)) 
+    ellipse (x,0,20,20)
+    pop()
+    push()
+    translate(300,400)
+    rotate(radians(poworot)) 
+    ellipse (x,0,20,20)
+    pop()
+    push()
+    translate(300,200)
+    rotate(radians(poworot)) 
+    ellipse (x,0,20,20)
+    pop()
+    push()
+    translate(0,0)
+    rotate(radians(poworot)) 
+    ellipse (x,0,20,20)
+    pop()
+    push()
+    translate(600,0)
+    rotate(radians(poworot)) 
+    ellipse (x,0,20,20)
+    pop()
+    push()
+    translate(0,400)
+    rotate(radians(poworot)) 
+    ellipse (x,0,20,20)
+    pop()
+    push()
+    translate(600,400)
+    rotate(radians(poworot)) 
+    ellipse (x,0,20,20)
+    pop()
